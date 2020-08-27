@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--Pomodoro Timer created by Nhu Le 7/14/2020-->
+<html>
+  <head>
+    <title>Pomodoro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="pd.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="encourage">YOU GOT THIS!</h1>
+
+    <div class="outcircle">
+      <div class="incircle"></div>
+    </div>
+
+    <div id="timer">
+      <div class="time">
+        <span id="minutes">25</span>
+        <span id="colon">:</span>
+        <span id="seconds">00</span>
+      </div>
+    </div>
+
+    <div class="icon">
+      <img id="play" src="playicon.svg" alt="Play" onclick="countdown()" />
+      <img id="pause" src="pauseicon.svg" alt="Pause" onclick="pause()" />
+      <img id="redo" src="redoicon.svg" alt="Restart" onclick="startover()" />
+    </div>
+
+    <div class="type">
+      <div class="row">
+        <div class="col">
+          <button id="pom" onclick="timeSet(25)">
+            POMODORO
+          </button>
+        </div>
+        <div class="col">
+          <button id="short" onclick="timeSet(5)">SHORT BREAK</button>
+        </div>
+        <div class="col">
+          <button id="long" onclick="timeSet(15)">LONG BREAK</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
